@@ -13,10 +13,12 @@ const Cart = (props) => {
 
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id);
+    // comment added to make a difference for forked project
   };
 
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
+    // comment added to make a difference for forked project
   };
 
   const cartItems = (
